@@ -4,6 +4,8 @@ import styles from './index.module.less';
 import ali from '@/assets/images/ali.png';
 import pc from '@/assets/images/pc.png';
 
+import BroadcastChannel from '@/utils/BroadcastChannel';
+
 const Index = () => {
   const history = useHistory();
   console.log(ali);
@@ -11,7 +13,12 @@ const Index = () => {
   return (
     <div className={styles.page}>
       <img src={ali} />
-      <img src={pc} />
+      <img
+        src={pc}
+        onClick={() => {
+          BroadcastChannel.postMessage('true');
+        }}
+      />
     </div>
   );
 };

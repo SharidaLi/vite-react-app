@@ -26,6 +26,12 @@ const routes: RouteConfig[] = [
         title: '关于',
         component: loadable(() => import('@/pages/about')),
       },
+      {
+        path: '/foo',
+        exact: true,
+        title: 'foo',
+        component: loadable(() => import('@/pages/foo')),
+      },
     ],
   },
 ];

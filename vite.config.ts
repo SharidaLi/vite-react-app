@@ -37,6 +37,13 @@ export default defineConfig({
             return `zarm/es/${name}/style/css.js`;
           },
         },
+        {
+          libraryName: 'antd',
+          esModule: true,
+          resolveStyle: (name) => {
+            return `antd/es/${name}/style/index.css`;
+          },
+        },
       ]
     }),
     legacy({
@@ -51,6 +58,11 @@ export default defineConfig({
     }),
   ],
   css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
     modules: {
       localsConvention: 'camelCaseOnly',
     },
