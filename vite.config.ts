@@ -47,14 +47,8 @@ export default defineConfig({
       ]
     }),
     legacy({
-      targets: [
-        'Android >= 39',
-        'Chrome >= 50',
-        'Safari >= 10.1',
-        'iOS >= 10.3',
-        '> 1%',
-        'not IE 11'
-      ]
+      targets: ['Android >= 39', 'Chrome >= 39', 'Safari >= 10.1', 'iOS >= 10', '> 0.5%'],
+      polyfills: ['es.promise', 'regenerator-runtime']
     }),
   ],
   css: {

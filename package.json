@@ -8,7 +8,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.6.2",
     "@loadable/component": "^5.15.0",
+    "ahooks": "^2.10.9",
     "antd": "^4.16.9",
     "axios": "^0.21.1",
     "react": "^17.0.0",
