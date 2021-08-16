@@ -21,6 +21,12 @@ const routes: RouteConfig[] = [
         component: loadable(() => import('@/pages/index')),
       },
       {
+        path: '/login',
+        exact: true,
+        title: '登录',
+        component: loadable(() => import('@/pages/login')),
+      },
+      {
         path: '/about',
         exact: true,
         title: '关于',

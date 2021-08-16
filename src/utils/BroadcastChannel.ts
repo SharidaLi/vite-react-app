@@ -1,6 +1,4 @@
 const bc = new BroadcastChannel('login');
-console.log("🚀 ~ file: BroadcastChannel.ts ~ line 2 ~ bc", bc)
-console.log("🚀 ~ file: BroadcastChannel.ts ~ line 2 ~ bc typeof", typeof bc)
 
 bc.onmessage = (event) => {
   const { data } = event;
